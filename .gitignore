@@ -1,0 +1,24 @@
+.DS_Store
+.htaccess
+.htpasswd
+Thumbs.db
+node_modules
+sftp-config.json
+
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# Applications
+*.app
+*.exe
+*.war
+
+# Large media files
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
