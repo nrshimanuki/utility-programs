@@ -1,0 +1,65 @@
+# リンクを押したらGoogleマップアプリを起動させる
+
+<a href="http://maps.google.com/maps?q=住所">住所</a>
+
+
+
+# CSSでアスペクト比を固定
+
+## Block
+
+<div class="container">
+	<div class="block">test block.</div>
+</div>
+
+<style>
+.container {
+	width: 100%;
+	position: relative;
+}
+.container:before {
+	display: block;
+	padding-top: 75%;
+	content:"";
+}
+.block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+</style>
+
+
+## iframe
+
+<div class="container">
+	<iframe class="block" src="https://" frameborder="0"></iframe>
+<div>
+
+<style>
+.container {
+	position: relative;
+	width: 100%;
+}
+.container:before {
+	display: block;
+	padding-top: 56.25%;
+	content:"";
+}
+.block {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+</style>
+
+* padding-topの値で比率をコントロールできる
+* 4:3 -> 3 / 4 * 100 = 75
+* 16:9 -> 9 / 16 * 100 = 56.25
+
+
+
